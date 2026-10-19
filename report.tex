@@ -1,0 +1,203 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage[margin=25mm]{geometry}
+\usepackage[hidelinks]{hyperref}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\setlength{\emergencystretch}{2em}
+
+\title{Baseline RAG and Cross-Encoder Reranking}
+\author{Aryan\\Roll No. 2025201017}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{Document and retrieval setup}
+
+The source document is Leder Games\textquotesingle{} \emph{The Law of Root},
+dated October 13, 2025. A rulebook suited this experiment because a general
+rule can be qualified by a restriction several pages later. The PDF has 32
+pages. Printed pages 2 to 29 form the corpus; the cover, index, credits and
+repeated quick reference are excluded. The notebook verifies the PDF hash
+and reads the text in column order.
+
+Both pipelines share 317 overlapping chunks with source-page metadata.
+The largest chunk in this run has 230 tokens, within the embedding
+model\textquotesingle{}s 256-token limit. The final word limit is 130, with
+an overlap target of 32 words.
+
+For baseline retrieval, \texttt{sentence-transformers/all-MiniLM-L6-v2}
+embeds each chunk independently. FAISS \texttt{IndexFlatIP} stores the
+normalized 384-dimensional vectors. Each query is embedded once.
+Inner product on normalized vectors gives cosine similarity, which is
+used to retrieve ten chunks. The first three are passed to the LLM for
+Answer 1.
+
+The cross-encoder, \texttt{cross-encoder/ms-marco-MiniLM-L-6-v2}, processes
+the query and each candidate chunk together. Joint self-attention lets it
+compare tokens across the two texts before producing a score. It scores
+the same ten candidates, sorts them, and passes the new top three to the
+LLM for Answer 2.
+
+The answer model is Groq\textquotesingle{}s \texttt{qwen/qwen3.8-27b}.
+Both pipelines use the same prompt, temperature 0.2, reasoning effort
+\texttt{none}, and a 1,024-token output limit. The prompt asks for answers
+based only on the excerpts, including restrictions and chunk/page
+citations. It also asks the model to say when the evidence is insufficient.
+
+\section{Where reranking helped}
+
+Most of the first 15 questions already had enough evidence in the baseline
+top three. Several chunks moved up, but those movements did not establish
+an answer improvement.
+
+The additional search tested 20 questions across eight rule families.
+It screened for a source-rule passage missing from the baseline top three
+and promoted into the reranked top three. Three selected questions received
+answer comparisons. The source-rule anchors were used for screening only;
+they were never added to either answer prompt.
+
+\subsection*{Boat Builders and hirelings}
+
+For the question about a hireling using its
+controller\textquotesingle{}s Boat Builders effect, the baseline retrieves
+Riverfolk Company rules about river movement. The subject is similar, but
+those passages say nothing about a hireling inheriting its
+controller\textquotesingle{}s effects. Answer 1 says there is not enough
+information to answer.
+
+Reranking moves \texttt{chunk\_0292} from rank 5 to rank 1. On page 26,
+rule H.3.5 says hirelings cannot use their
+controller\textquotesingle{}s abilities or crafted persistent effects.
+It even names Boat Builders as an example. Answer 2 gives the supported
+answer: no.
+
+This case shows how passages about boats and river movement can crowd out
+a restriction on who may use an effect.
+
+\subsection*{Exposure at the end of a turn}
+
+The second question asks whether a player can expose a Corvid plot after
+starting their final draw-and-discard step. The baseline finds draw/discard
+instructions and Corvid overview material. Answer 1 cannot determine
+whether Exposure is allowed at that point.
+
+The missing restriction is in \texttt{chunk\_0154}, on page 15. It moves
+from rank 8 to rank 1. Rule 13.2.4 explicitly says that Exposure cannot be
+used once the player has begun the last step of their turn. Answer 2
+answers no and cites this rule. Its discussion of the neighboring
+draw/discard instructions is less direct, but the Exposure restriction
+itself resolves the question.
+
+Here, retrieving the turn sequence was not enough. The answer depended
+on a timing condition in a different passage.
+
+\subsection*{A third example: coalition with a Hostile faction}
+
+For the question about joining a Hostile faction and moving its marker to
+Indifferent, \texttt{chunk\_0092} moves from rank 4 to rank 1. The baseline
+has the general coalition rules but cannot answer the relationship part.
+The reranked answer explains that forming a coalition moves the marker to
+Indifferent. The rule is on page 10, within a chunk spanning pages 9 to 10.
+Normal coalition conditions still apply, including the four-player minimum.
+
+\begin{center}
+\small
+\begin{tabular}{p{0.40\textwidth}p{0.24\textwidth}rr}
+\hline
+Question & Relevant chunk & Before & After \\
+\hline
+Hireling using Boat Builders & \texttt{chunk\_0292} & 5 & 1 \\
+Exposure after the final step begins & \texttt{chunk\_0154} & 8 & 1 \\
+Coalition with a Hostile faction & \texttt{chunk\_0092} & 4 & 1 \\
+\hline
+\end{tabular}
+\end{center}
+
+In these cases the baseline abstains rather than inventing a rule.
+Reranking provides the evidence needed to answer.
+
+\section{Retrieval time}
+
+The notebook ran on Kaggle. After a warm-up, it measured each original
+query five times, giving 75 samples. The three selected stress questions
+also have five samples each. Baseline time covers query embedding and
+FAISS search. Reranked time adds the cost of scoring ten pairs.
+Model loading, indexing, answer generation and API retry waits are excluded.
+The supplied files do not record the exact Kaggle accelerator.
+
+\begin{center}
+\small
+\begin{tabular}{p{0.37\textwidth}rrr}
+\hline
+Measurement & Baseline (ms) & Cross-encoder (ms) & Total (ms) \\
+\hline
+Original queries, pooled median & 6.26 & 21.10 & 27.50 \\
+Boat Builders, median of 5 & 7.14 & 21.29 & 28.43 \\
+Late Exposure, median of 5 & 6.56 & 20.69 & 27.23 \\
+Hostile coalition, median of 5 & 6.73 & 22.54 & 30.06 \\
+\hline
+\end{tabular}
+\end{center}
+
+The ratio of the original queries\textquotesingle{} median reranked time
+to their median baseline time is about 4.39. Most of the additional time
+comes from the cross-encoder. Each column reports its own median, so the
+component medians need not sum exactly to the median total. These are
+measurements of this run; the hardware details are insufficient for a
+broader speed comparison.
+
+\section{Why not score every chunk with a cross-encoder?}
+
+The bi-encoder computes passage embeddings once and reuses them for later
+queries. The current FAISS flat index performs an exact vector search.
+An approximate index could be used for a larger collection.
+
+A cross-encoder must process every passage together with the current query.
+It cannot reuse an independent passage embedding in the same way.
+For this corpus, scoring everything would require 317 pairs per query
+instead of ten, about 32 times as many pair evaluations. Batching and
+hardware affect the runtime, so that pair count does not imply an exact
+32-fold latency increase. The cost grows with the collection size.
+Candidate retrieval keeps this expensive scoring step limited to ten pairs.
+
+\section{What still failed}
+
+The original Hostile-coalition question missed the relevant chunk in its
+initial top ten. Both answers lacked the rule. A differently worded stress
+question retrieved it and allowed reranking to promote it. This is a
+limit of the two-stage setup: the cross-encoder can only reorder what it
+receives. Query wording affected which passages reached that stage.
+
+The Winter-map case exposed another problem. The baseline applies the
+general rule that rivers do not divide forests. Reranking promotes the
+specific exception from rank 5 to rank 2, but the selected chunk begins
+at M.2.1 and leaves out its parent Winter Map heading. The LLM treats
+the exception as an optional variant and still gives a misleading final
+answer. Keeping section headings with their child rules is a possible
+improvement. It was not tested here.
+
+All 36 answers finished with \texttt{stop} and no recorded API error.
+That confirms completion. Factual accuracy still requires checking the
+answers against the source. The successful cases above were checked
+against the PDF and their supplied contexts.
+
+The questions were selected through exploratory screening, so these
+results do not give an overall accuracy rate on unseen questions.
+
+\section*{Code and supporting files}
+
+Repository: \url{https://github.com/a4Aaaryan/rag-baseline-vs-reranking}
+
+Rulebook source: \url{https://ledergames.com/pages/resources}
+
+The notebook and dependency list are in the repository.
+\texttt{answers\_completed.csv} contains the original comparisons;
+\texttt{stress\_answers.csv} contains the three additional pairs.
+The evidence files retain the retrieved passages and their ranks.
+The timing CSVs contain individual measurements. API keys and the
+downloaded rulebook are excluded from Git.
+
+\end{document}
