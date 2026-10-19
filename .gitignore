@@ -1,0 +1,26 @@
+# Local environments, credentials, and caches
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.cache/
+
+# Generated scratch outputs; selected final CSVs at the repo root are committed.
+outputs/
+
+# Downloadable source document and local assignment handout (not the report).
+data/*.pdf
+/RAG_LMA_Assignment_v1.pdf
+
+# Incomplete export superseded by answers_completed.csv.
+/answers.csv
+
+# Local OS metadata
+.DS_Store
+Thumbs.db
+Desktop.ini

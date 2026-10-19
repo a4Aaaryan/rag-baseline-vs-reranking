@@ -1,0 +1,151 @@
+query,chunk_id,rule_page_hint,baseline_rank,reranked_rank,pages,rule_refs,cosine_score,cross_score,baseline_top3,reranked_top3
+Can a bird card substitute for another suit when you must discard cards?,chunk_0015,,1,1,3-3,"2.1.2, 2.1.3",0.7878425121307373,8.888495445251465,True,True
+Can a bird card substitute for another suit when you must discard cards?,chunk_0014,,2,2,3-3,2.1.1,0.7320767641067505,7.516918182373047,True,True
+Can a bird card substitute for another suit when you must discard cards?,chunk_0024,,3,3,3-4,"3.3.2, 3.3.3, 3.3.4",0.6500710248947144,4.866575241088867,True,True
+Can a bird card substitute for another suit when you must discard cards?,chunk_0025,,4,5,4-4,"3.3.4, 4, 4.1, 4.1.1",0.5522764325141907,2.3915841579437256,False,False
+Can a bird card substitute for another suit when you must discard cards?,chunk_0279,,5,10,25-26,"G.22, G.23, G.24",0.5010457038879395,-4.874381065368652,False,False
+Can a bird card substitute for another suit when you must discard cards?,chunk_0117,,6,4,11-11,"10.4.1, 10.4.2",0.4980298578739166,2.4959232807159424,False,False
+Can a bird card substitute for another suit when you must discard cards?,chunk_0116,,7,9,11-11,"10.3.4, 10.4, 10.4.1",0.4864407479763031,-2.090445041656494,False,False
+Can a bird card substitute for another suit when you must discard cards?,chunk_0121,,8,7,12-12,"10.5.3, 10.5.4, 10.6, 10.6.1, 10.6.2",0.47085514664649963,-0.02992115169763565,False,False
+Can a bird card substitute for another suit when you must discard cards?,chunk_0059,,9,6,7-7,"7.6.2, 7.7, 7.7.1, 7.7.2",0.47006574273109436,0.7013757824897766,False,False
+Can a bird card substitute for another suit when you must discard cards?,chunk_0244,,10,8,22-22,"18.6.4, A, A.1, A.2",0.4660361111164093,-0.05574746057391167,False,False
+Can a card of another suit substitute when a rule specifically asks for a bird card?,chunk_0015,,1,1,3-3,"2.1.2, 2.1.3",0.7380938529968262,6.294332981109619,True,True
+Can a card of another suit substitute when a rule specifically asks for a bird card?,chunk_0014,,2,2,3-3,2.1.1,0.6417319774627686,3.748840093612671,True,True
+Can a card of another suit substitute when a rule specifically asks for a bird card?,chunk_0024,,3,3,3-4,"3.3.2, 3.3.3, 3.3.4",0.6369901895523071,2.349626064300537,True,True
+Can a card of another suit substitute when a rule specifically asks for a bird card?,chunk_0025,,4,4,4-4,"3.3.4, 4, 4.1, 4.1.1",0.584322452545166,0.7867316007614136,False,False
+Can a card of another suit substitute when a rule specifically asks for a bird card?,chunk_0116,,5,7,11-11,"10.3.4, 10.4, 10.4.1",0.4603169560432434,-3.717010498046875,False,False
+Can a card of another suit substitute when a rule specifically asks for a bird card?,chunk_0201,,6,8,18-18,,0.44130730628967285,-5.701147556304932,False,False
+Can a card of another suit substitute when a rule specifically asks for a bird card?,chunk_0121,,7,5,12-12,"10.5.3, 10.5.4, 10.6, 10.6.1, 10.6.2",0.4316751956939697,-1.775644063949585,False,False
+Can a card of another suit substitute when a rule specifically asks for a bird card?,chunk_0055,,8,9,6-6,"7.3.5, 7.4, 7.4.1, 7.4.2, 7.4.3",0.4186127185821533,-5.721607208251953,False,False
+Can a card of another suit substitute when a rule specifically asks for a bird card?,chunk_0279,,9,10,25-26,"G.22, G.23, G.24",0.4020024836063385,-6.009097099304199,False,False
+Can a card of another suit substitute when a rule specifically asks for a bird card?,chunk_0117,,10,6,11-11,"10.4.1, 10.4.2",0.39497560262680054,-3.0584559440612793,False,False
+Can a player move along a river as though it were a path?,chunk_0125,,1,1,12-12,"11.2.2, 11.2.3, 11.2.4, 11.2.5",0.54527348279953,4.386040687561035,True,True
+Can a player move along a river as though it were a path?,chunk_0128,,2,5,12-12,,0.46045249700546265,-2.0049405097961426,True,False
+Can a player move along a river as though it were a path?,chunk_0019,,3,3,3-3,"2.4, 2.4.1, 2.5",0.4587855041027069,1.186650276184082,True,True
+Can a player move along a river as though it were a path?,chunk_0302,,4,4,27-28,"M.4, M.4.1, M.4.2",0.4546782076358795,0.29268792271614075,False,False
+Can a player move along a river as though it were a path?,chunk_0307,,5,8,28-28,"M.5.2, M.6",0.4464775323867798,-7.101240158081055,False,False
+Can a player move along a river as though it were a path?,chunk_0205,,6,2,19-19,"16.2.3, 16.2.4",0.43430083990097046,2.1070785522460938,False,True
+Can a player move along a river as though it were a path?,chunk_0301,,7,6,27-27,"M.3.4, M.3.5",0.43323174118995667,-2.831817626953125,False,False
+Can a player move along a river as though it were a path?,chunk_0308,,8,7,28-28,"M.6, M.6.1, M.6.2, M.6.3, V, V.1, V.1.1, V.1.2",0.42985737323760986,-4.5508856773376465,False,False
+Can a player move along a river as though it were a path?,chunk_0123,,9,10,12-12,"10.6.3, 11, 11.1",0.4149010181427002,-9.746417045593262,False,False
+Can a player move along a river as though it were a path?,chunk_0124,,10,9,12-12,"11.2, 11.2.1",0.4113657474517822,-8.331457138061523,False,False
+Can the Marquise use Field Hospitals on Riverfolk mercenaries?,chunk_0128,,1,2,12-12,,0.5330870747566223,5.566214084625244,True,True
+Can the Marquise use Field Hospitals on Riverfolk mercenaries?,chunk_0130,,2,5,12-12,"11.3, 11.3.1, 11.3.2, 11.3.3",0.4240448474884033,-3.3365230560302734,True,False
+Can the Marquise use Field Hospitals on Riverfolk mercenaries?,chunk_0043,,3,3,5-5,"6.2.2, 6.2.3, 6.3, 6.3.1, 6.3.2",0.4129619598388672,2.086475372314453,True,True
+Can the Marquise use Field Hospitals on Riverfolk mercenaries?,chunk_0129,,4,1,12-12,,0.41015124320983887,5.6989569664001465,False,True
+Can the Marquise use Field Hospitals on Riverfolk mercenaries?,chunk_0127,,5,7,12-12,11.2.7,0.398185133934021,-7.163530349731445,False,False
+Can the Marquise use Field Hospitals on Riverfolk mercenaries?,chunk_0041,,6,4,5-5,"6, 6.1",0.38655561208724976,-2.9781391620635986,False,False
+Can the Marquise use Field Hospitals on Riverfolk mercenaries?,chunk_0133,,7,10,13-13,"11.5.1, 11.5.2, 11.5.3",0.34995725750923157,-10.141260147094727,False,False
+Can the Marquise use Field Hospitals on Riverfolk mercenaries?,chunk_0124,,8,6,12-12,"11.2, 11.2.1",0.3480692505836487,-6.7766337394714355,False,False
+Can the Marquise use Field Hospitals on Riverfolk mercenaries?,chunk_0126,,9,8,12-12,"11.2.5, 11.2.6",0.3425896465778351,-7.959981441497803,False,False
+Can the Marquise use Field Hospitals on Riverfolk mercenaries?,chunk_0134,,10,9,13-13,"11.5.3, 11.5.4, 11.5.5, 11.5.6",0.3414553701877594,-9.445596694946289,False,False
+Can the Knaves of the Deepwood and the Vagabond be played together?,chunk_0229,,1,1,21-21,"18.2, 18.2.1, 18.2.2, 18.2.3, 18.2.4",0.6880981922149658,8.21664810180664,True,True
+Can the Knaves of the Deepwood and the Vagabond be played together?,chunk_0228,,2,6,21-21,,0.5539294481277466,2.2129220962524414,True,False
+Can the Knaves of the Deepwood and the Vagabond be played together?,chunk_0251,,3,4,23-23,A.8.1,0.5352226495742798,3.747999668121338,True,False
+Can the Knaves of the Deepwood and the Vagabond be played together?,chunk_0078,,4,8,8-9,"9.2, 9.2.1",0.5236101746559143,-1.3829503059387207,False,False
+Can the Knaves of the Deepwood and the Vagabond be played together?,chunk_0250,,5,3,23-23,"A.7, A.8",0.5176633596420288,5.628559589385986,False,True
+Can the Knaves of the Deepwood and the Vagabond be played together?,chunk_0255,,6,5,23-23,A.8.3,0.5021769404411316,3.1894454956054688,False,False
+Can the Knaves of the Deepwood and the Vagabond be played together?,chunk_0252,,7,2,23-23,A.8.2,0.48618167638778687,6.354918479919434,False,True
+Can the Knaves of the Deepwood and the Vagabond be played together?,chunk_0077,,8,10,8-8,"8.6.2, 9, 9.1",0.47609496116638184,-3.724621534347534,False,False
+Can the Knaves of the Deepwood and the Vagabond be played together?,chunk_0230,,9,7,21-21,"18.2.3, 18.2.4, 18.2.5",0.47597736120224,-0.6563361287117004,False,False
+Can the Knaves of the Deepwood and the Vagabond be played together?,chunk_0084,,10,9,9-9,9.2.8,0.47328341007232666,-3.201683521270752,False,False
+Can two Corvid plot tokens be placed in the same clearing?,chunk_0153,,1,2,14-15,13.2.3,0.7284369468688965,6.515658855438232,True,True
+Can two Corvid plot tokens be placed in the same clearing?,chunk_0152,,2,4,14-15,"13.2.1, 13.2.2, 13.2.3",0.6713989973068237,6.247159481048584,True,False
+Can two Corvid plot tokens be placed in the same clearing?,chunk_0157,,3,5,15-15,"13.4.3, 13.5, 13.5.1, 13.5.2, 13.5.3, 13.5.4",0.5395737886428833,6.184534072875977,True,False
+Can two Corvid plot tokens be placed in the same clearing?,chunk_0151,,4,8,14-14,"13.2, 13.2.1, 13.2.2",0.5366431474685669,0.7833507061004639,False,False
+Can two Corvid plot tokens be placed in the same clearing?,chunk_0154,,5,3,15-15,"13.2.4, 13.2.5",0.5019786357879639,6.299709320068359,False,True
+Can two Corvid plot tokens be placed in the same clearing?,chunk_0158,,6,1,15-15,"13.5.2, 13.5.3, 13.5.4, 13.6, 13.6.1, 13.6.2",0.48271721601486206,6.833680152893066,False,True
+Can two Corvid plot tokens be placed in the same clearing?,chunk_0156,,7,6,15-15,"13.4.2, 13.4.3, 13.5, 13.5.1",0.4597557485103607,4.980533123016357,False,False
+Can two Corvid plot tokens be placed in the same clearing?,chunk_0043,,8,9,5-5,"6.2.2, 6.2.3, 6.3, 6.3.1, 6.3.2",0.40801382064819336,-0.5044863224029541,False,False
+Can two Corvid plot tokens be placed in the same clearing?,chunk_0068,,9,10,7-7,"8.2.5, 8.2.6",0.37769633531570435,-1.1718828678131104,False,False
+Can two Corvid plot tokens be placed in the same clearing?,chunk_0155,,10,7,15-15,"13.3, 13.3.1, 13.3.2, 13.4, 13.4.1, 13.4.2",0.37608861923217773,2.8758580684661865,False,False
+Does the attacker get an extra hit when the defender has no warriors?,chunk_0034,,1,1,4-4,4.3.6,0.585671067237854,8.464258193969727,True,True
+Does the attacker get an extra hit when the defender has no warriors?,chunk_0033,,2,2,4-4,"4.3.4, 4.3.5",0.5811159014701843,7.003793716430664,True,True
+Does the attacker get an extra hit when the defender has no warriors?,chunk_0089,,3,7,9-9,,0.5710721611976624,1.9994356632232666,True,False
+Does the attacker get an extra hit when the defender has no warriors?,chunk_0032,,4,5,4-4,"4.3.3, 4.3.4",0.5499637126922607,3.3222386837005615,False,False
+Does the attacker get an extra hit when the defender has no warriors?,chunk_0088,,5,10,9-9,,0.4683520197868347,-0.4787624180316925,False,False
+Does the attacker get an extra hit when the defender has no warriors?,chunk_0090,,6,9,9-9,,0.4501264691352844,0.10894834250211716,False,False
+Does the attacker get an extra hit when the defender has no warriors?,chunk_0029,,7,8,4-4,"4.2.2, 4.3, 4.3.1",0.42115160822868347,0.6626327037811279,False,False
+Does the attacker get an extra hit when the defender has no warriors?,chunk_0031,,8,3,4-4,"4.3.2, 4.3.3",0.419958233833313,4.664587497711182,False,True
+Does the attacker get an extra hit when the defender has no warriors?,chunk_0223,,9,6,20-21,,0.4058600068092346,2.0712053775787354,False,False
+Does the attacker get an extra hit when the defender has no warriors?,chunk_0154,,10,4,15-15,"13.2.4, 13.2.5",0.4041401445865631,3.7155861854553223,False,False
+Which rule wins if a card conflicts with the Law?,chunk_0005,,1,1,2-2,"1.1.1, 1.1.2, 1.1.3, 1.2, 1.2.1",0.589525580406189,5.473998069763184,True,True
+Which rule wins if a card conflicts with the Law?,chunk_0002,,2,6,2-2,,0.5348927974700928,-9.702099800109863,True,False
+Which rule wins if a card conflicts with the Law?,chunk_0003,,3,4,2-2,1,0.46140211820602417,-8.686750411987305,True,False
+Which rule wins if a card conflicts with the Law?,chunk_0024,,4,3,3-4,"3.3.2, 3.3.3, 3.3.4",0.44460684061050415,-5.937835216522217,False,True
+Which rule wins if a card conflicts with the Law?,chunk_0001,,5,5,2-2,,0.44152963161468506,-9.657463073730469,False,False
+Which rule wins if a card conflicts with the Law?,chunk_0007,,6,7,2-2,"1.3.1, 1.3.2, 1.3.3, 1.4, 1.4.1",0.40248215198516846,-9.938895225524902,False,False
+Which rule wins if a card conflicts with the Law?,chunk_0006,,7,9,2-2,"1.2, 1.2.1, 1.2.2, 1.3, 1.3.1, 1.3.2, 1.3.3, 1.4",0.39582645893096924,-10.753458976745605,False,False
+Which rule wins if a card conflicts with the Law?,chunk_0015,,8,8,3-3,"2.1.2, 2.1.3",0.39343294501304626,-10.078788757324219,False,False
+Which rule wins if a card conflicts with the Law?,chunk_0004,,9,2,2-2,"1, 1.1, 1.1.1",0.3881453275680542,4.037277698516846,False,True
+Which rule wins if a card conflicts with the Law?,chunk_0013,,10,10,3-3,"1.5.5, 2, 2.1",0.3757805824279785,-10.876856803894043,False,False
+"After buying Riverboats, may I keep treating rivers as paths on another player’s turn?",chunk_0125,12 (11.2.7.II),1,3,12-12,"11.2.2, 11.2.3, 11.2.4, 11.2.5",0.633622407913208,0.6000609397888184,True,True
+"After buying Riverboats, may I keep treating rivers as paths on another player’s turn?",chunk_0128,12 (11.2.7.II),2,1,12-12,,0.6055542826652527,6.060467720031738,True,True
+"After buying Riverboats, may I keep treating rivers as paths on another player’s turn?",chunk_0123,12 (11.2.7.II),3,9,12-12,"10.6.3, 11, 11.1",0.5622469186782837,-10.119754791259766,True,False
+"After buying Riverboats, may I keep treating rivers as paths on another player’s turn?",chunk_0127,12 (11.2.7.II),4,2,12-12,11.2.7,0.5131070613861084,3.111604690551758,False,True
+"After buying Riverboats, may I keep treating rivers as paths on another player’s turn?",chunk_0124,12 (11.2.7.II),5,10,12-12,"11.2, 11.2.1",0.5077510476112366,-10.267961502075195,False,False
+"After buying Riverboats, may I keep treating rivers as paths on another player’s turn?",chunk_0126,12 (11.2.7.II),6,4,12-12,"11.2.5, 11.2.6",0.5055087804794312,-0.613318145275116,False,False
+"After buying Riverboats, may I keep treating rivers as paths on another player’s turn?",chunk_0130,12 (11.2.7.II),7,7,12-12,"11.3, 11.3.1, 11.3.2, 11.3.3",0.49348461627960205,-7.008475303649902,False,False
+"After buying Riverboats, may I keep treating rivers as paths on another player’s turn?",chunk_0129,12 (11.2.7.II),8,5,12-12,,0.4855600595474243,-1.703053593635559,False,False
+"After buying Riverboats, may I keep treating rivers as paths on another player’s turn?",chunk_0310,12 (11.2.7.II),9,8,28-28,"V.3.1, V.3.2, V.4, V.4.1, V.4.2, V.5, V.5.1, V.5.2",0.45127859711647034,-7.435733795166016,False,False
+"After buying Riverboats, may I keep treating rivers as paths on another player’s turn?",chunk_0311,12 (11.2.7.II),10,6,28-28,"V.5, V.5.1, V.5.2, V.6",0.450388640165329,-6.208492755889893,False,False
+"If I buy Riverfolk mercenaries, can I move those warriors or count them toward dominance?",chunk_0128,12 (11.2.7.III),1,2,12-12,,0.7095304131507874,6.941702842712402,True,True
+"If I buy Riverfolk mercenaries, can I move those warriors or count them toward dominance?",chunk_0130,12 (11.2.7.III),2,3,12-12,"11.3, 11.3.1, 11.3.2, 11.3.3",0.7067115902900696,4.610964775085449,True,True
+"If I buy Riverfolk mercenaries, can I move those warriors or count them toward dominance?",chunk_0129,12 (11.2.7.III),3,1,12-12,,0.6529483795166016,7.841116428375244,True,True
+"If I buy Riverfolk mercenaries, can I move those warriors or count them toward dominance?",chunk_0125,12 (11.2.7.III),4,5,12-12,"11.2.2, 11.2.3, 11.2.4, 11.2.5",0.5980737209320068,0.34994757175445557,False,False
+"If I buy Riverfolk mercenaries, can I move those warriors or count them toward dominance?",chunk_0133,12 (11.2.7.III),5,6,13-13,"11.5.1, 11.5.2, 11.5.3",0.5875442028045654,-0.2105228155851364,False,False
+"If I buy Riverfolk mercenaries, can I move those warriors or count them toward dominance?",chunk_0126,12 (11.2.7.III),6,4,12-12,"11.2.5, 11.2.6",0.587372362613678,0.935002863407135,False,False
+"If I buy Riverfolk mercenaries, can I move those warriors or count them toward dominance?",chunk_0134,12 (11.2.7.III),7,7,13-13,"11.5.3, 11.5.4, 11.5.5, 11.5.6",0.5764119625091553,-0.7105191349983215,False,False
+"If I buy Riverfolk mercenaries, can I move those warriors or count them toward dominance?",chunk_0123,12 (11.2.7.III),8,10,12-12,"10.6.3, 11, 11.1",0.5657668113708496,-3.1460366249084473,False,False
+"If I buy Riverfolk mercenaries, can I move those warriors or count them toward dominance?",chunk_0127,12 (11.2.7.III),9,8,12-12,11.2.7,0.5509860515594482,-1.03092622756958,False,False
+"If I buy Riverfolk mercenaries, can I move those warriors or count them toward dominance?",chunk_0212,12 (11.2.7.III),10,9,19-19,"16.5.2, 16.6, 16.6.1",0.5340931415557861,-1.3336087465286255,False,False
+"Can another faction move pieces into the clearing with the Marquise keep, and can the keep be replaced after removal?",chunk_0043,5 (6.2.2),1,1,5-5,"6.2.2, 6.2.3, 6.3, 6.3.1, 6.3.2",0.6899122595787048,6.856849670410156,True,True
+"Can another faction move pieces into the clearing with the Marquise keep, and can the keep be replaced after removal?",chunk_0042,5 (6.2.2),2,2,5-5,"6.2, 6.2.1, 6.2.2",0.5855326056480408,4.310675144195557,True,True
+"Can another faction move pieces into the clearing with the Marquise keep, and can the keep be replaced after removal?",chunk_0282,5 (6.2.2),3,5,26-26,"G.27, G.28, G.29, G.30, G.31, G.32, G.33, G.34",0.520901083946228,1.1036392450332642,True,False
+"Can another faction move pieces into the clearing with the Marquise keep, and can the keep be replaced after removal?",chunk_0280,5 (6.2.2),4,4,25-26,"G.24, G.25",0.48082709312438965,1.7245762348175049,False,False
+"Can another faction move pieces into the clearing with the Marquise keep, and can the keep be replaced after removal?",chunk_0279,5 (6.2.2),5,6,25-26,"G.22, G.23, G.24",0.4604010581970215,0.23542837798595428,False,False
+"Can another faction move pieces into the clearing with the Marquise keep, and can the keep be replaced after removal?",chunk_0191,5 (6.2.2),6,9,18-18,15.5.2,0.4475063681602478,-6.518832206726074,False,False
+"Can another faction move pieces into the clearing with the Marquise keep, and can the keep be replaced after removal?",chunk_0283,5 (6.2.2),7,3,26-26,"G.33, G.34, G.35, G.36",0.432841956615448,2.53157639503479,False,True
+"Can another faction move pieces into the clearing with the Marquise keep, and can the keep be replaced after removal?",chunk_0011,5 (6.2.2),8,7,2-2,"1.5.2, 1.5.3",0.42726069688796997,-0.5985174179077148,False,False
+"Can another faction move pieces into the clearing with the Marquise keep, and can the keep be replaced after removal?",chunk_0217,5 (6.2.2),9,8,20-20,"17.2, 17.2.1, 17.2.2, 17.2.3",0.4268196225166321,-3.9786558151245117,False,False
+"Can another faction move pieces into the clearing with the Marquise keep, and can the keep be replaced after removal?",chunk_0195,5 (6.2.2),10,10,18-18,"15.6, 15.6.1",0.42462652921676636,-7.948122978210449,False,False
+"Can a Vagabond form a coalition with a Hostile faction, and what happens to its relationship marker?",chunk_0084,10 (9.2.9.d),1,1,9-9,9.2.8,0.6480050086975098,4.507591247558594,True,True
+"Can a Vagabond form a coalition with a Hostile faction, and what happens to its relationship marker?",chunk_0078,10 (9.2.9.d),2,3,8-9,"9.2, 9.2.1",0.5654507875442505,2.694483757019043,True,True
+"Can a Vagabond form a coalition with a Hostile faction, and what happens to its relationship marker?",chunk_0076,10 (9.2.9.d),3,9,8-8,"8.6.2, 9, 9.1",0.5550788640975952,-5.3077263832092285,True,False
+"Can a Vagabond form a coalition with a Hostile faction, and what happens to its relationship marker?",chunk_0085,10 (9.2.9.d),4,2,9-9,9.2.9,0.5522129535675049,4.233153820037842,False,True
+"Can a Vagabond form a coalition with a Hostile faction, and what happens to its relationship marker?",chunk_0252,10 (9.2.9.d),5,7,23-23,A.8.2,0.5423489809036255,-4.166510581970215,False,False
+"Can a Vagabond form a coalition with a Hostile faction, and what happens to its relationship marker?",chunk_0077,10 (9.2.9.d),6,4,8-8,"8.6.2, 9, 9.1",0.526793897151947,0.3533072769641876,False,False
+"Can a Vagabond form a coalition with a Hostile faction, and what happens to its relationship marker?",chunk_0255,10 (9.2.9.d),7,5,23-23,A.8.3,0.520796537399292,-3.747690200805664,False,False
+"Can a Vagabond form a coalition with a Hostile faction, and what happens to its relationship marker?",chunk_0129,10 (9.2.9.d),8,10,12-12,,0.5152787566184998,-5.5023932456970215,False,False
+"Can a Vagabond form a coalition with a Hostile faction, and what happens to its relationship marker?",chunk_0218,10 (9.2.9.d),9,6,20-20,"17.2.3, 17.2.4, 17.2.5",0.5079873204231262,-4.118459701538086,False,False
+"Can a Vagabond form a coalition with a Hostile faction, and what happens to its relationship marker?",chunk_0251,10 (9.2.9.d),10,8,23-23,A.8.1,0.5048744082450867,-4.217041969299316,False,False
+Can a hireling use its controller’s Boat Builders effect to move on rivers?,chunk_0125,26 (H.3.5),1,3,12-12,"11.2.2, 11.2.3, 11.2.4, 11.2.5",0.5069491267204285,-7.221953392028809,True,True
+Can a hireling use its controller’s Boat Builders effect to move on rivers?,chunk_0124,26 (H.3.5),2,5,12-12,"11.2, 11.2.1",0.5019387006759644,-10.7023286819458,True,False
+Can a hireling use its controller’s Boat Builders effect to move on rivers?,chunk_0123,26 (H.3.5),3,8,12-12,"10.6.3, 11, 11.1",0.5009881258010864,-11.059046745300293,True,False
+Can a hireling use its controller’s Boat Builders effect to move on rivers?,chunk_0128,26 (H.3.5),4,2,12-12,,0.46840667724609375,-5.6652679443359375,False,True
+Can a hireling use its controller’s Boat Builders effect to move on rivers?,chunk_0292,26 (H.3.5),5,1,26-26,"H.3.4, H.3.5",0.44662976264953613,7.756750583648682,False,True
+Can a hireling use its controller’s Boat Builders effect to move on rivers?,chunk_0311,26 (H.3.5),6,9,28-28,"V.5, V.5.1, V.5.2, V.6",0.4118208587169647,-11.231017112731934,False,False
+Can a hireling use its controller’s Boat Builders effect to move on rivers?,chunk_0130,26 (H.3.5),7,6,12-12,"11.3, 11.3.1, 11.3.2, 11.3.3",0.4009940028190613,-10.874909400939941,False,False
+Can a hireling use its controller’s Boat Builders effect to move on rivers?,chunk_0310,26 (H.3.5),8,10,28-28,"V.3.1, V.3.2, V.4, V.4.1, V.4.2, V.5, V.5.1, V.5.2",0.3938400447368622,-11.292503356933594,False,False
+Can a hireling use its controller’s Boat Builders effect to move on rivers?,chunk_0127,26 (H.3.5),9,7,12-12,11.2.7,0.3877484202384949,-10.909469604492188,False,False
+Can a hireling use its controller’s Boat Builders effect to move on rivers?,chunk_0129,26 (H.3.5),10,4,12-12,,0.38509735465049744,-8.629643440246582,False,False
+Can the controller include its own warriors in a hireling’s Move action?,chunk_0292,26 (H.3.4),1,1,26-26,"H.3.4, H.3.5",0.5829569697380066,6.605045795440674,True,True
+Can the controller include its own warriors in a hireling’s Move action?,chunk_0288,26 (H.3.4),2,6,26-26,"H.2, H.2.1",0.5635582208633423,-0.522120475769043,True,False
+Can the controller include its own warriors in a hireling’s Move action?,chunk_0291,26 (H.3.4),3,2,26-26,"H.3.3, H.3.4",0.5345866680145264,5.998713493347168,True,True
+Can the controller include its own warriors in a hireling’s Move action?,chunk_0289,26 (H.3.4),4,4,26-26,"H.2.1, H.2.2, H.2.3, H.2.4, H.3",0.4677816927433014,0.8963071703910828,False,False
+Can the controller include its own warriors in a hireling’s Move action?,chunk_0285,26 (H.3.4),5,5,26-26,"G.36, H, H.1, H.1.1",0.46318554878234863,-0.050328243523836136,False,False
+Can the controller include its own warriors in a hireling’s Move action?,chunk_0132,26 (H.3.4),6,8,13-13,"11.4.1, 11.4.2, 11.4.3, 11.5, 11.5.1",0.460330069065094,-5.315628528594971,False,False
+Can the controller include its own warriors in a hireling’s Move action?,chunk_0223,26 (H.3.4),7,7,20-21,,0.45355963706970215,-0.5933000445365906,False,False
+Can the controller include its own warriors in a hireling’s Move action?,chunk_0220,26 (H.3.4),8,10,20-20,"17.3.1, 17.3.2, 17.3.3, 17.4, 17.4.1, 17.4.2",0.4386575520038605,-5.829349994659424,False,False
+Can the controller include its own warriors in a hireling’s Move action?,chunk_0157,26 (H.3.4),9,9,15-15,"13.4.3, 13.5, 13.5.1, 13.5.2, 13.5.3, 13.5.4",0.4273320734500885,-5.5712785720825195,False,False
+Can the controller include its own warriors in a hireling’s Move action?,chunk_0293,26 (H.3.4),10,3,26-26,"H.3.5, H.3.6",0.42671096324920654,2.451828956604004,False,True
+Does a hireling’s controller score points when the hireling removes an enemy building?,chunk_0293,26 (H.3.6),1,2,26-26,"H.3.5, H.3.6",0.7007064819335938,8.897859573364258,True,True
+Does a hireling’s controller score points when the hireling removes an enemy building?,chunk_0294,26 (H.3.6),2,1,26-27,"H.3.6, H.3.7, K, K.1, K.1.1",0.6767513751983643,9.462602615356445,True,True
+Does a hireling’s controller score points when the hireling removes an enemy building?,chunk_0288,26 (H.3.6),3,3,26-26,"H.2, H.2.1",0.5156757235527039,2.6352462768554688,True,True
+Does a hireling’s controller score points when the hireling removes an enemy building?,chunk_0292,26 (H.3.6),4,6,26-26,"H.3.4, H.3.5",0.46488624811172485,1.6607335805892944,False,False
+Does a hireling’s controller score points when the hireling removes an enemy building?,chunk_0289,26 (H.3.6),5,8,26-26,"H.2.1, H.2.2, H.2.3, H.2.4, H.3",0.46217143535614014,-0.3999897837638855,False,False
+Does a hireling’s controller score points when the hireling removes an enemy building?,chunk_0285,26 (H.3.6),6,7,26-26,"G.36, H, H.1, H.1.1",0.43597283959388733,1.0482449531555176,False,False
+Does a hireling’s controller score points when the hireling removes an enemy building?,chunk_0290,26 (H.3.6),7,4,26-26,"H.2.3, H.2.4, H.3, H.3.1, H.3.2, H.3.3",0.4343448877334595,2.3530683517456055,False,False
+Does a hireling’s controller score points when the hireling removes an enemy building?,chunk_0291,26 (H.3.6),8,5,26-26,"H.3.3, H.3.4",0.4135074317455292,1.773878812789917,False,False
+Does a hireling’s controller score points when the hireling removes an enemy building?,chunk_0286,26 (H.3.6),9,9,26-26,H.1.2,0.40700435638427734,-1.3695709705352783,False,False
+Does a hireling’s controller score points when the hireling removes an enemy building?,chunk_0226,26 (H.3.6),10,10,21-21,"17.6.4, 17.6.5, 18, 18.1",0.3948448896408081,-2.4907729625701904,False,False

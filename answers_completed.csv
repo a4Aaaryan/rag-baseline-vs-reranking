@@ -1,0 +1,208 @@
+query,baseline_answer,baseline_llm_s,baseline_finish_reason,baseline_model_version,baseline_prompt_tokens,baseline_answer_tokens,baseline_thinking_tokens,baseline_total_tokens,baseline_error,reranked_answer,reranked_llm_s,reranked_finish_reason,reranked_model_version,reranked_prompt_tokens,reranked_answer_tokens,reranked_thinking_tokens,reranked_total_tokens,reranked_error,baseline_context_sha256,reranked_context_sha256,baseline_request_attempts,baseline_wait_s,reranked_request_attempts,reranked_wait_s
+Can a bird card substitute for another suit when you must discard cards?,"Yes, a bird card can substitute for another suit when you must discard cards.
+
+According to the rules, bird cards are wild and can be treated as a card of another suit. Specifically, under the ""Forced Effects"" rule, if you are prompted to discard or give cards of non-bird suits, you must treat your bird cards as the prompted suit. However, the reverse is not true: if you are prompted to discard a bird card, you cannot substitute a card of another suit.
+
+**Supporting Citations:**
+*   **[chunk_0014, pages 3-3]**: States that ""You can treat any bird card as a card of another suit"" and specifies that for forced effects, ""If you are prompted to discard or give cards of non-bird suits, you must treat your bird cards as a prompted suit.""
+*   **[chunk_0015, pages 3-3]**: Reiterates the ""Forced Effects"" rule regarding discarding non-bird suits and the ""Reverse Substitution"" rule which prohibits substituting other suits for a prompted bird card.",0.6546948529999099,stop,qwen/qwen3.8-27b,587.0,232.0,,819.0,,"Yes, a bird card can substitute for another suit when you must discard cards, but only under specific conditions.
+
+According to the rules, you can generally treat any bird card as a card of another suit, even if you must spend, take, or give multiple cards of the same suit [chunk_0014, pages 3-3]. However, there is a specific restriction for **Forced Effects**: if you are prompted to discard or give cards of non-bird suits, you **must** treat your bird cards as the prompted suit [chunk_0015, pages 3-3; chunk_0014, pages 3-3]. This means you cannot choose to keep a bird card or substitute it with a different non-bird suit if the effect specifically requires discarding a non-bird suit; the bird card is forced to count as that required suit.
+
+Additionally, the **Reverse Substitution** rule states that if you are prompted to spend, discard, take, or give a bird card specifically, you **cannot** substitute a card of another suit [chunk_0015, pages 3-3]. This restriction applies only when the prompt is for a bird card, not when the prompt is for a non-bird suit.
+
+In summary:
+- If prompted to discard a **non-bird** suit, bird cards **must** be treated as that suit (substitution is mandatory/forced).
+- If prompted to discard a **bird** suit, you **cannot** substitute a non-bird card for it.
+
+Sources: [chunk_0014, pages 3-3], [chunk_0015, pages 3-3]",0.8386628370003564,stop,qwen/qwen3.8-27b,587.0,356.0,,943.0,,056b94a31a7aae4a5c6760a2f77be4576181fca642295dacd99b6501ac338e49,056b94a31a7aae4a5c6760a2f77be4576181fca642295dacd99b6501ac338e49,,,,
+Can a card of another suit substitute when a rule specifically asks for a bird card?,"No, a card of another suit cannot substitute when a rule specifically asks for a bird card.
+
+According to the ""Reverse Substitution"" rule, if you are prompted to spend, discard, take, or give a bird card, you **cannot** substitute a card of another suit [chunk_0015, pages 3-3; chunk_0014, pages 3-3].
+
+While bird cards are generally ""wild"" and can be treated as cards of another suit (2.1.1 Birds Are Wild), this flexibility does not apply in reverse. You cannot use a non-bird card to fulfill a requirement specifically for a bird card [chunk_0014, pages 3-3; chunk_0015, pages 3-3].",0.4523085400001037,stop,qwen/qwen3.8-27b,590.0,165.0,,755.0,,"No, a card of another suit cannot substitute when a rule specifically asks for a bird card.
+
+According to the ""Reverse Substitution"" rule, if you are prompted to spend, discard, take, or give a bird card, you **cannot** substitute a card of another suit [chunk_0015, pages 3-3; chunk_0014, pages 3-3]. This restriction applies specifically to actions involving bird cards, distinguishing it from the general ""Birds Are Wild"" rule which allows bird cards to be treated as other suits [chunk_0014, pages 3-3].",0.39207775500017306,stop,qwen/qwen3.8-27b,590.0,131.0,,721.0,,44c2284a8c48e0ba7274c1319a3be8ef5666468fa7c0d0156aec21baf8b196ff,44c2284a8c48e0ba7274c1319a3be8ef5666468fa7c0d0156aec21baf8b196ff,,,,
+Can a player move along a river as though it were a path?,"Generally, a player **cannot** move along a river as though it were a path. The rules explicitly state that ""Rivers are not paths"" [chunk_0019, page 3]. However, a player may treat rivers as paths only if **explicitly instructed** to do so [chunk_0019, page 3].
+
+There are two specific exceptions where this condition is met:
+
+1.  **Riverfolk Faction:** The Riverfolk treat rivers as paths and may move along a river that fully links an origin and destination clearing, ignoring the need for rule [chunk_0125, page 12].
+2.  **Riverboats Service:** A buyer who purchases the ""Riverboats"" service from the Riverfolk treats rivers as paths until the end of their turn [chunk_0128, page 12].
+
+In all other cases, rivers do not function as paths for movement [chunk_0019, page 3].",0.5278388120000272,stop,qwen/qwen3.8-27b,607.0,207.0,,814.0,,"Based on the provided document excerpts, a player **cannot** generally move along a river as though it were a path. The general rule states that ""Rivers are not paths, but can be treated as paths if explicitly instructed"" [chunk_0019, page 3].
+
+However, there are specific exceptions for certain factions:
+*   **Riverfolk:** They ""treat rivers as paths and may move along a river fully linking an origin and destination clearing, ignoring the need for rule"" [chunk_0125, page 12].
+*   **Diaspora:** They also ""treat rivers as paths and may move along a river fully linking an origin and destination clearing, ignoring the need for rule"" [chunk_0205, page 19].
+
+In both exceptional cases, the movement must be along a river that **fully links** an origin and destination clearing. These factions can still move using standard paths as well [chunk_0125, page 12; chunk_0205, page 19].",0.5597536249997574,stop,qwen/qwen3.8-27b,614.0,225.0,,839.0,,0d1a20c8f2e111e392f04466a00d74b33550fefaaee0624686fbf9b4aaae1d45,ec74a867c0f28dadef7b6984e7db36573419c3de19561fe34d82e5855a90604b,,,,
+Can the Marquise use Field Hospitals on Riverfolk mercenaries?,"No, the Marquise cannot use Field Hospitals on Riverfolk mercenaries.
+
+According to the rules for Riverfolk Mercenaries, when a buyer treats Riverfolk warriors as their own, those warriors ""are still Riverfolk faction pieces, so they cannot be affected by abilities such as the Marquise's Field Hospitals"" [chunk_0128, pages 12-12]. Additionally, the definition of Field Hospitals specifies that they apply only when ""Marquise warriors"" are removed [chunk_0043, pages 5-5]. Since Riverfolk mercenaries remain Riverfolk faction pieces even when controlled by the Marquise, they do not qualify as Marquise warriors for the purpose of this ability.",0.4284238769996591,stop,qwen/qwen3.8-27b,637.0,150.0,,787.0,,"No, the Marquise cannot use Field Hospitals on Riverfolk mercenaries.
+
+According to the rules for hiring Riverfolk mercenaries, although the buyer treats Riverfolk warriors as their own for rule and battle purposes, these pieces remain ""Riverfolk faction pieces."" Consequently, they **cannot be affected by abilities such as the Marquise's Field Hospitals** [chunk_0128, pages 12-12; chunk_0129, pages 12-12].
+
+The Field Hospitals ability specifically allows the Marquise to replace removed **Marquise warriors** with a card matching the clearing [chunk_0043, pages 5-5]. Since Riverfolk mercenaries are explicitly excluded from being affected by this ability, they do not qualify for this replacement.",0.4683118840002862,stop,qwen/qwen3.8-27b,602.0,164.0,,766.0,,e7e033a53c8bdf22795de8e77e44decb2b4a79c21841eff6c39c3c115a8f5dd4,f94ab7e9611fcde3ebe5b79eaa3ff38c811530d0d31d2d74ebcca5f46c406b21,,,,
+Can the Knaves of the Deepwood and the Vagabond be played together?,"No, the Knaves of the Deepwood and the Vagabond cannot be played together.
+
+The rules explicitly state that the Knaves of the Deepwood are ""Exclusive with Vagabond"" and ""cannot be played in the same game as the Vagabond"" [chunk_0229, page 21]. Furthermore, during the setup process, it is specified that players ""cannot include both the Vagabond and the Knaves of the Deepwood"" [chunk_0251, page 23].",0.3678567930001009,stop,qwen/qwen3.8-27b,594.0,118.0,,712.0,,"No, the Knaves of the Deepwood and the Vagabond cannot be played together. The rules explicitly state that the Knaves of the Deepwood are ""Exclusive with Vagabond"" and ""cannot be played in the same game as the Vagabond"" [chunk_0229, page 21]. This restriction is reiterated in the setup instructions, which state, ""You cannot include both the Vagabond and the Knaves of the Deepwood"" [chunk_0252, page 23]. Additionally, if the Exile/Brigand hireling is in play, it removes both the Vagabond and the Knaves of the Deepwood from the game [chunk_0250, page 23].",0.4868662660001064,stop,qwen/qwen3.8-27b,670.0,167.0,,837.0,,692aaee7b0bafb41a48cab06be411c0e0d11848956227966b6b45e52a666c8c1,81ab48724426a442192f7cd69da4531665215cf84e3b5dc0e63cf175fcb5eba4,,,,
+Can two Corvid plot tokens be placed in the same clearing?,"No, two Corvid plot tokens cannot be placed in the same clearing. The rules explicitly state under ""Placement Limits"" that ""Each clearing can hold only one plot token."" This restriction applies regardless of the token's facing (face up or face down).
+
+**Supporting Citations:**
+*   [chunk_0152, pages 14-15]: ""II Placement Limits. Each clearing can hold only one plot token.""
+*   [chunk_0153, pages 14-15]: ""II Placement Limits. Each clearing can hold only one plot token.""",0.3721226510001543,stop,qwen/qwen3.8-27b,528.0,125.0,,653.0,,"No, two Corvid plot tokens cannot be placed in the same clearing. The rules explicitly state under ""Placement Limits"" that ""Each clearing can hold only one plot token.""
+
+**Supporting Citations:**
+*   [chunk_0153, pages 14-15]: ""II Placement Limits. Each clearing can hold only one plot token.""",0.2692042710000351,stop,qwen/qwen3.8-27b,551.0,76.0,,627.0,,562e4d9ba46ec0f3d7f7885c7b438c582073d96c6ba4bd4e4b2149421d6c5ee1,b1ff907876ed0ba6d7b5589d5d7a2c76b78eacba3ebf87306de3344b22778e73,,,,
+Does the attacker get an extra hit when the defender has no warriors?,"Yes, the attacker gets an extra hit if the defender has no warriors in the clearing of battle. This rule is explicitly stated under the ""Defenseless"" condition in the ""Count Hits"" step (Step 5).
+
+**Supporting Details:**
+*   **Condition:** The defender must have **no warriors** in the clearing of battle.
+*   **Effect:** The attacker deals **an extra hit**.
+*   **Context:** This extra hit is part of the total hits counted in Step 5, which includes rolled hits and battle effects. It is distinct from ""Extra Hits"" from other effects, which are also not limited by the number of warriors.
+
+**Citations:**
+*   [chunk_0033, pages 4-4]: ""II Defenseless. If the defender has no warriors in the clearing of battle, the attacker deals an extra hit.""
+*   [chunk_0034, pages 4-4]: ""II Defenseless. If the defender has no warriors in the clearing of battle, the attacker deals an extra hit.""",0.5722044129997812,stop,qwen/qwen3.8-27b,624.0,224.0,,848.0,,"Yes, the attacker gets an extra hit if the defender has no warriors in the clearing of battle. This rule is explicitly stated under the ""Defenseless"" condition in the ""Count Hits"" step (Step 5).
+
+**Supporting Details:**
+*   **Rule:** ""If the defender has no warriors in the clearing of battle, the attacker deals an extra hit.""
+*   **Context:** This extra hit is counted during Step 5 (Count Hits) and is distinct from ""Extra Hits"" from other effects, which are noted as not being limited by the number of warriors.
+*   **Citations:** [chunk_0034, pages 4-4], [chunk_0033, pages 4-4]",0.4403307779998613,stop,qwen/qwen3.8-27b,623.0,156.0,,779.0,,00f00edcbda8deeef676882a0679fc0dd2355970381031096a7c49eaf9fc2926,d5ae69bd5bba9415f326fbb538fa67f2d1b6ec9994c33be96066843d16b7a021,,,,
+Which rule wins if a card conflicts with the Law?,"If a card conflicts with the Law, the card wins. You must follow the card.
+
+**Citations:**
+*   [chunk_0005, pages 2-2]",0.19123996200005422,stop,qwen/qwen3.8-27b,564.0,41.0,,605.0,,"If a card conflicts with the Law, the card wins. You must follow the card.
+
+**Citations:**
+*   [chunk_0005, pages 2-2]
+*   [chunk_0004, pages 2-2]",0.2437314020003214,stop,qwen/qwen3.8-27b,605.0,58.0,,663.0,,70acd94ba5cbb256af6fb1bbbff0d19dde133b8b97c7e2273222d48cdc563a6c,f835a7c733182547c49e87b7d840a7e3345b1c6642cdd0e32dc52390c5009fb2,,,,
+"After buying Riverboats, may I keep treating rivers as paths on another player’s turn?","No, you may not keep treating rivers as paths on another player’s turn.
+
+According to the document, when a player buys the **Riverboats** service, they ""treat rivers as paths **until the end of their turn**."" This restriction explicitly limits the ability to the buyer's current turn, meaning it does not persist into other players' turns.
+
+**Supporting Citations:**
+*   [chunk_0128, pages 12-12]: ""II Riverboats. The buyer treats rivers as paths until the end of their turn.""",0.3728363290001653,stop,qwen/qwen3.8-27b,621.0,118.0,,739.0,,"No, you may not keep treating rivers as paths on another player’s turn. The document states that when buying the Riverboats service, ""The buyer treats rivers as paths until the end of their turn."" This restriction limits the effect to the duration of the buyer's own turn only.
+
+**Supporting Citations:**
+*   [chunk_0128, pages 12-12]
+*   [chunk_0127, pages 12-12]",0.3395411689998582,stop,qwen/qwen3.8-27b,633.0,103.0,,736.0,,46a14ccf47395ab8c43fff0470fccc90f9af8417e7e7c53394fba9eff32dc1c5,8a22ebb3e290f9058bbbc449325682bdd636b6d966dccc0c2c533fc2b8e92c1c,,,,
+"If I buy Riverfolk mercenaries, can I move those warriors or count them toward dominance?","No, you cannot move Riverfolk mercenaries or count them toward dominance.
+
+According to the rules for Riverfolk Mercenaries, while the buyer treats these warriors as their own for rule and battle purposes during Daylight and Evening (except when battling the Riverfolk), there are specific restrictions:
+*   **Movement:** The buyer **cannot move** them.
+*   **Dominance:** The buyer **cannot count them toward dominance**.
+*   **Removal:** They can only be removed by taking hits.
+
+Additionally, although they are treated as the buyer's for rule and battle, they remain **Riverfolk faction pieces**. This means they cannot be affected by abilities such as the Marquise's Field Hospitals or used in actions such as the Duchy's Sway Ministers.
+
+**Citations:**
+*   [chunk_0128, pages 12-12]
+*   [chunk_0129, pages 12-12]",0.5095452969999315,stop,qwen/qwen3.8-27b,629.0,202.0,,831.0,,"No, you cannot move Riverfolk mercenaries or count them toward dominance.
+
+According to the rules for purchasing Mercenaries, while the buyer treats Riverfolk warriors as their own for rule and battle purposes during Daylight and Evening of that turn (except when battling the Riverfolk), there are specific restrictions:
+*   The buyer **cannot move** them.
+*   The buyer **cannot count them toward dominance**.
+*   The buyer cannot remove them except by taking hits.
+
+Additionally, these warriors remain Riverfolk faction pieces, meaning they cannot be affected by certain abilities (such as the Marquise's Field Hospitals) or used in specific actions (such as the Duchy's Sway Ministers).
+
+**Citations:**
+*   [chunk_0128, pages 12-12]
+*   [chunk_0129, pages 12-12]",0.49231795100013187,stop,qwen/qwen3.8-27b,629.0,186.0,,815.0,,bbbae7d7fc5d561b52bef895f89c4029ea5d222b90326908445e6cca5216afbf,80f2c0a808b41fd5e8348f37f0518ce6d9bd066ae46c7944dad2c9860155ac68,,,,
+"Can another faction move pieces into the clearing with the Marquise keep, and can the keep be replaced after removal?","Based on the provided document excerpts, here are the answers to your questions:
+
+**1. Can another faction move pieces into the clearing with the Marquise keep?**
+**Yes.** While other players are prohibited from *placing* pieces in the clearing with the keep token, the rules explicitly state that pieces **may be moved** into it.
+*   **Citation:** [chunk_0043, pages 5-5] and [chunk_0042, pages 5-5] state: ""The Marquise can place pieces in the clearing with the keep token, and other players cannot. (Pieces may be moved into it...)""
+
+**2. Can the keep be replaced after removal?**
+**No.** If the keep token is removed from the map, there is no mechanism to place it back on the map.
+*   **Citation:** [chunk_0043, pages 5-5] and [chunk_0042, pages 5-5] state: ""(...If the keep is removed, there is no way to place it on the map again.)""
+
+**Relevant Restrictions and Exceptions:**
+*   **Placement vs. Movement:** The restriction applies specifically to *placing* pieces. Other players cannot place pieces in the keep clearing, but they can move pieces into it. [chunk_0043, pages 5-5]
+*   **Swap Exception:** The general rule that ""Swap"" ignores move and place restrictions (such as the Marquise's keep) is noted in the glossary, implying that a ""Swap"" action could potentially move a piece into the keep clearing even if normal movement rules might be interpreted differently, though the primary rule allows movement. [chunk_0282, pages 26-26]
+*   **Field Hospitals:** The Marquise may use Field Hospitals to place removed warriors into the keep clearing, but this is a specific ability of the Marquise faction, not a general rule for other factions. [chunk_0043, pages 5-5]",0.9622905520000131,stop,qwen/qwen3.8-27b,671.0,439.0,,1110.0,,"Based on the provided document excerpts, here is the answer to your questions:
+
+**1. Can another faction move pieces into the clearing with the Marquise keep?**
+**Yes.** While other players are prohibited from *placing* pieces in the clearing with the keep token, they are allowed to *move* pieces into it.
+*   **Restriction:** The Marquise can place pieces in the clearing with the keep token, and other players cannot.
+*   **Exception/Condition:** Pieces may be moved into the clearing.
+*   **Source:** [chunk_0043, pages 5-5] and [chunk_0042, pages 5-5]
+
+**2. Can the keep be replaced after removal?**
+**No.** If the keep token is removed from the map, there is no mechanism provided to place it back on the map.
+*   **Condition:** If the keep is removed, there is no way to place it on the map again.
+*   **Source:** [chunk_0043, pages 5-5] and [chunk_0042, pages 5-5]
+
+**Additional Note on Exceptions:**
+The ""Swap"" ability (G.33) explicitly ignores move and place restrictions, including the Marquise's keep. This implies that if a Swap effect is triggered, it could potentially move a piece into the keep or swap the keep token itself, bypassing the standard restriction that other players cannot place pieces there. However, the standard rule for normal movement and placement remains as described above.
+*   **Source:** [chunk_0283, pages 26-26]",0.8480290890001925,stop,qwen/qwen3.8-27b,646.0,354.0,,1000.0,,acea2b67e27e0241c045a04326e63d3f9782b179cb83d2f405ac1509e66fc42b,b32b9a1c94b97e77f6bdb9dccb7cfc3194b72fc163d053842a44fbb51062dc79,,,,
+"Can a Vagabond form a coalition with a Hostile faction, and what happens to its relationship marker?","Based on the provided document excerpts, here is the answer to your question:
+
+**Can a Vagabond form a coalition with a Hostile faction?**
+The provided excerpts **do not contain enough information** to explicitly state whether a ""Hostile"" faction is eligible or ineligible for a coalition. The rules specify eligibility based on victory point counts and existing coalition status, but they do not reference faction relationship types (such as ""Hostile"") as a condition for forming a coalition.
+
+**What happens to its relationship marker?**
+The provided excerpts **do not contain enough information** to describe what happens to a ""relationship marker"" when a coalition is formed. The text mentions that the Vagabond places his **score marker** on the other player's faction board and that he ""no longer scores points"" from his own faction. It also mentions improving relationships with factions in the overview (chunk_0078), but it does not link this to the coalition mechanic or describe any change to a specific ""relationship marker"" during a coalition.
+
+**Relevant Restrictions and Conditions for Forming a Coalition (from chunk_0084):**
+*   **Player Count:** The game must have four or more players.
+*   **Victory Point Condition:** The other player must have fewer victory points than each other player, except the Vagabond.
+*   **Tie-Breaker:** If there is a tie for fewest victory points, the Vagabond chooses one of the tied players.
+*   **Coalition Status:** The other player cannot already be in a coalition.
+*   **Outcome:** The Vagabond places his score marker on the other player's faction board and stops scoring points for himself. If the coalitioned player wins, the Vagabond also wins.
+
+**Citations:**
+*   [chunk_0084, pages 9-9] for coalition rules, restrictions, and score marker placement.
+*   [chunk_0078, pages 8-9] for general Vagabond mechanics regarding relationships and scoring, which does not mention coalition-specific marker changes.",1.0250437220001913,stop,qwen/qwen3.8-27b,540.0,446.0,,986.0,,"Based on the provided document excerpts, here is the answer to your question:
+
+**Can a Vagabond form a coalition with a Hostile faction?**
+The provided excerpts **do not contain enough information** to explicitly state whether a Vagabond can or cannot form a coalition with a faction that is currently in the ""Hostile"" box on the Relationships chart.
+
+*   **Supporting Evidence:** Chunk [chunk_0084] specifies the conditions for forming a coalition: the target player must have ""fewer victory points than each other player except the Vagabond"" and ""cannot be in a coalition."" It does not list the target player's relationship status (Allied vs. Hostile) as a restriction or requirement.
+*   **Missing Information:** Chunk [chunk_0085] defines the ""Hostile box"" as part of the Relationships chart but does not link this status to the coalition rules in [chunk_0084]. Therefore, it is unclear from these specific excerpts if being ""Hostile"" prevents a player from being a valid coalition target, or if the Vagabond can choose a Hostile faction if they meet the victory point criteria.
+
+**What happens to its relationship marker?**
+The provided excerpts **do not contain enough information** to describe what happens to the Vagabond's relationship marker with the coalition partner when a coalition is formed.
+
+*   **Supporting Evidence:** Chunk [chunk_0084] states that when a coalition is formed, the Vagabond places his **score marker** on the other player's faction board and ""no longer scores points"" from that faction's normal victory conditions. It does not mention any movement, removal, or change to the **relationship marker** on the Relationships chart.
+*   **Missing Information:** Chunk [chunk_0085] describes how relationship markers move (via the Aid action) but does not describe any effect on relationship markers caused by the act of forming a coalition.
+
+**Conclusion:**
+While the excerpts confirm the Vagabond can form a coalition under specific victory point conditions [chunk_0084, p. 9], they do not specify if the target must be non-Hostile, nor do they state any effect on the relationship marker itself.",1.0972963010003696,stop,qwen/qwen3.8-27b,590.0,479.0,,1069.0,,6a8f85585c6efd91de6ba5206636e7eb482a99f24c647fbb07c244d219326ab2,3c340fd64cabdada5cb4a001b03e8f69e659980ed874465cb5a2bd51f2ba97ee,,,,
+Can a hireling use its controller’s Boat Builders effect to move on rivers?,"Based on the provided document excerpts, there is **not enough information** to answer whether a hireling can use its controller’s Boat Builders effect to move on rivers.
+
+The excerpts define the **Riverfolk Company** faction's specific abilities, stating that ""The Riverfolk treat rivers as paths and may move along a river fully linking an origin and destination clearing, ignoring the need for rule"" [chunk_0125, page 12]. However, the text does not mention ""Boat Builders,"" ""hirelings,"" or any rules regarding how other factions or hirelings interact with river movement or the Riverfolk's specific abilities.",0.38993945000038366,stop,qwen/qwen3.8-27b,611,130,,741,,"No, a hireling cannot use its controller’s Boat Builders effect to move on rivers.
+
+According to the document, hirelings are subject to ""Separate Effects,"" which explicitly states that ""Hirelings cannot use their controller's abilities, crafted persistent effects, or ambush cards."" The text provides a specific example confirming this restriction: ""So, a hireling could not use Boat Builders while moving."" Additionally, hirelings cannot take actions in ways that involve the controller's pieces or abilities, such as through the controller's Move actions.
+
+**Citations:**
+*   [chunk_0292, pages 26-26]",0.3879071199999089,stop,qwen/qwen3.8-27b,594,133,,727,,cc68a5772dc16c814e81d47b5e8864ebafa21ab997d65033df01d1028f47ea33,5ecd2697def2331a13596fbe47a884ca425c23eb6d30bd3bba6c97e70aa7fd8e,1,0.0,1,19.608366532999753
+Can the controller include its own warriors in a hireling’s Move action?,"No, the controller cannot include its own warriors in a hireling’s Move action.
+
+According to the rules under **H.3.4 Separate Actions**, a hireling's Move or Battle actions are restricted to moving or battling **only with the hireling's pieces** and explicitly **cannot include the controller's pieces**. Additionally, hirelings cannot take actions through the controller's Move actions.
+
+**Supporting Citations:**
+*   [chunk_0292, pages 26-26]
+*   [chunk_0291, pages 26-26]",0.37318902900005924,stop,qwen/qwen3.8-27b,547,125,,672,,"No, the controller cannot include its own warriors in a hireling’s Move action.
+
+According to the rule **H.3.4 Separate Actions**, a hireling's Move or Battle actions ""can only move or battle with the hireling's pieces and **cannot include the controller's pieces**."" Additionally, hirelings cannot take actions in other ways, such as from the controller's Move actions.
+
+**Citations:**
+*   [chunk_0292, pages 26-26]
+*   [chunk_0291, pages 26-26]",0.3784192510001958,stop,qwen/qwen3.8-27b,541,125,,666,,72c027b0a172a72ac6efa31307ac2547f21889176fae14764572707e4cbf236e,276d91c475f5ffb4ed299c9cdd9ca3d32bc5d579a31fa122cf5564640b3d0c40,1,19.61041524600023,1,19.625350777999756
+Does a hireling’s controller score points when the hireling removes an enemy building?,"No, a hireling’s controller does not score victory points when the hireling removes an enemy piece, which includes enemy buildings.
+
+**Supporting Evidence:**
+*   **Rule H.3.6 (No Scoring from Removal):** Explicitly states that ""A hireling's controller does not score victory points if their hireling removes an enemy piece (usually in battle)."" [chunk_0293, page 26; chunk_0294, pages 26-27]
+
+**Exceptions/Clarifications:**
+*   Other players **can** still score points by removing hireling buildings and tokens, even if doing so while defending in battle against the hireling. [chunk_0293, page 26; chunk_0294, pages 26-27]
+*   Players still score as normal if the Warm Sun Prophets force that player's faction pieces to battle. [chunk_0293, page 26; chunk_0294, pages 26-27]",0.6182803289998446,stop,qwen/qwen3.8-27b,595,224,,819,,"No, a hireling’s controller does not score victory points if their hireling removes an enemy piece, which includes enemy buildings.
+
+**Supporting Excerpts:**
+*   **[chunk_0294, pages 26-27] & [chunk_0293, pages 26-26]**: Section H.3.6 ""No Scoring from Removal"" explicitly states: ""A hireling's controller does not score victory points if their hireling removes an enemy piece (usually in battle).""
+*   **Exception/Clarification**: The same sections note that other players *can* still score points by removing hireling buildings and tokens, even when defending in battle against the hireling. Additionally, players score as normal if the Warm Sun Prophets force that player's faction pieces to battle.",0.4822512010000537,stop,qwen/qwen3.8-27b,595,173,,768,,9bc1f8af46790eecdbc15d9da645371a1087e97930975461d2d18c2557622210,4c294b10f23f5b5d121391bb6cee5a62d04bbe3a514ce55fc684e1227ce1d3a5,1,19.620190511000146,1,19.38016801699996
